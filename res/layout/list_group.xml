@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1"
+        android:lineSpacingExtra="-1dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="7dp"
+        android:text="Header Header Header Header Header Header Header"
+        android:textStyle="bold"
+        android:textColor="@color/title_heading"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:layout_weight="5"
+        android:gravity="right" >
+
+        <ImageView
+            android:id="@+id/imageview_list_group_indicator"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="2dp"            
+            android:src="@drawable/groupindicator1" />
+
+    </LinearLayout>
+
+</LinearLayout>

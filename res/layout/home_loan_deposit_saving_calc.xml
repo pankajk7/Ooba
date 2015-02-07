@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f6f7f7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layout_calculator_layout_affordability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/affordable_cacl_icon_home_page" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textview_affordability_affordability_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HOME LOAN DEPOSIT SAVING CALCULATOR"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textview_affordability_affordability_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:text="Calculate how much you need to save and for how long, to save for a home loan deposit."
+                            android:textColor="#616466" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_whatamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOW MUCH DO I NEED TO SAVE FOR A DEPOSIT?"
+                    android:textColor="@color/title_heading"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_grossmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Property value *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_homeloan_deposit_savingcalc_propertyvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_netmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deposit required as % of property value *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_homeloan_deposit_savingcalc_depositrequired"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint="%"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_totalmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current savings amount *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_homeloan_deposit_savingcalc_current_saving_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_nettsurplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By when do you need your deposit? *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_homeloan_deposit_savingcalc_bywhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:editable="false"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saving interest rate *"
+                    android:textColor="#616466" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edittext_homeloan_deposit_savingcalc_interest_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3.1"
+                android:gravity="right" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2.5"
+                    android:gravity="left" >
+
+                    <Button
+                        android:id="@+id/button_homeloanDepositsaving_prequalify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/red_button"
+                        android:padding="3dp"
+                        android:text="PREQUALIFY NOW"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.4"
+                    android:gravity="right" >
+
+                    <Button
+                        android:id="@+id/button_homeloanDepositsaving_calculate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/green_button"
+                        android:padding="3dp"
+                        android:text="CALCULATE"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_affordability"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3.1"
+                android:background="#fff"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.1"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="Deposit amount"
+                        android:textColor="@color/title_heading"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="="
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/textview_home_loan_deposit_depositamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_horizontal"
+                            android:text="R 9000.00"
+                            android:textColor="#69bd27"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.1"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="Monthly saving amount"
+                        android:textColor="@color/title_heading"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="="
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/textview_home_loan_deposit_monthlysavingamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_horizontal"
+                            android:text="R 9000.00"
+                            android:textColor="#69bd27"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.1"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="Total saving amount"
+                        android:textColor="@color/title_heading"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="="
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/textview_home_loan_deposit_totalsavingamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_horizontal"
+                            android:text="R 9000.00"
+                            android:textColor="#69bd27"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="#fff" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#69bd27"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.4" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/calculators_bottom_text"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textview_affordability_calculator_prequalify"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="PREQUALIFY NOW  >"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/messageicon_whiteborder_small" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

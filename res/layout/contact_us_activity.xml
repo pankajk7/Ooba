@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f6f7f7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/message_icon_contact_page" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textview_contactus_label_contactus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily=""
+                            android:text="CONTACT US"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textview_contactus_label_tagline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="ooba experts are available nationwide in South Africa."
+                            android:textColor="#616466"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/base_top_bar_bottomline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_contactus_label_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_contactus_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textColorHint="@color/validation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_contactus_label_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_contactus_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textColorHint="@color/validation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_contactus_label_contactnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_contactus_contactnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textColorHint="@color/validation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_contactus_label_emailaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_contactus_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textColorHint="@color/validation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_contactus_label_natureofenquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nature of Enquiry *"
+                    android:textColor="#616466" />
+
+                <TextView
+                    android:id="@+id/textview_contactus_enquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:drawableRight="@drawable/dropdownarrow"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textColorHint="@color/validation"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textview_contactus_label_howwould"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How would you like us to reach you? *"
+                    android:textColor="#616466" />
+
+                <TextView
+                    android:id="@+id/textview_contactus_reach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:drawableRight="@drawable/dropdownarrow"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textColorHint="@color/validation"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_contactus_label_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_contactus_comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@drawable/edittext_new"
+                    android:lines="3"
+                    android:maxLines="4"
+                    android:minLines="3"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="1dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#acacac"
+                    android:gravity="left|start"
+                    android:textColorHint="@color/validation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3.1"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/button_contactus_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/okbuttonimage"
+                    android:text="SEND"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

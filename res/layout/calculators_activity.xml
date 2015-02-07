@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_calculator_layout_affordability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/affordable_cacl_icon_home_page" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_calculator_affordability_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:text="AFFORDABILITY CALCULATOR"
+                        android:textColor="@color/title_heading"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textview_calculator_affordability_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="Calculate the size home loan you are likely to quality for."
+                        android:textColor="#616466" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/calculator_menu_divider" />
+
+            <LinearLayout
+                android:id="@+id/layout_calculator_layout_bondreplaymentcalculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_weight="3"
+                    android:gravity="top" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bond_repayment_cacl_icon_home_page" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="7dp"
+                   android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_calculator_bondrepayment_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:text="BOND REPAYMENT CALCULATOR"
+                        android:textColor="@color/title_heading"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textview_calculator_bondrepayment_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:lineSpacingExtra="-6dp"
+                        android:paddingTop="2dp"
+                        android:text="calculate your monthly home loan expense."
+                        android:textColor="#616466" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/calculator_menu_divider" />
+
+            <LinearLayout
+                android:id="@+id/layoutBondTransferCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_weight="3"
+                    android:gravity="top" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bond_and_transfercost__cacl_icon_home_page" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_calculator_bondtransfer_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:text="BOND AND TRANSFER COST CALCULATOR"
+                        android:textColor="@color/title_heading"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textview_calculator_bondtransfer_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="Calculate the administration and registration costs on your home loan."
+                        android:textColor="#616466" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/calculator_menu_divider" />
+
+            <LinearLayout
+                android:id="@+id/layout_homeloan_ammorision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_weight="3"
+                    android:gravity="top" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/homeloan_amort_cacl_icon_home_page" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_calculator_homeloan_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:text="HOME LOAN AMORTISATION CALCULATOR"
+                        android:textColor="@color/title_heading"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textview_calculator_homeloan_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="Calculate how much of your bond instalment goes towardsinterest and how much towards reducing the actual home loan amount."
+                        android:textColor="#616466" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/calculator_menu_divider" />
+
+            <LinearLayout
+                android:id="@+id/homeloan_depositsavingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_weight="3"
+                    android:gravity="top" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/homeloan_depo_saving_cacl_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_calculator_homeloandeposit_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:text="HOME LOAN DEPOSIT SAVING CALCULATOR"
+                        android:textColor="@color/title_heading"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textview_calculator_homeloandeposit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="-6dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="Calculate how much you need to save and for how long, to save for a home loan deposit."
+                        android:textColor="#616466" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

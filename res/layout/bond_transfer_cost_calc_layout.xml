@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f6f7f7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layout_calculator_layout_affordability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/bond_and_transfercost__cacl_icon_home_page" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textview_affordability_affordability_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BOND AND TRANSFER COST CALCULATOR"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textview_affordability_affordability_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:text="Calculate the administration and registration costs on your home loan."
+                            android:textColor="#616466" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d7d7d7" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_whatamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WHAT WILL MY REGISTRATION AND TRANSFER COSTS BE?"
+                    android:textColor="@color/title_heading"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_grossmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purchase price *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_bondtransfercalc_purchase_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_netmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loan amount *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_bondtransfercalc_loan_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_totalmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nature of status *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_bondtransfercalc_natureof_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:drawableRight="@drawable/dropdownarrow"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="none"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_nettsurplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seller registered for VAT"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_bondtransfercalc_seller_registred_for_vat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:drawableRight="@drawable/dropdownarrow"
+                    android:editable="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="none"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status of purchase"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_bondtransfercalc_ststus_of_purchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:drawableRight="@drawable/dropdownarrow"
+                    android:editable="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="none"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3.1"
+                android:gravity="left" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2.8"
+                    android:gravity="left" >
+
+                    <Button
+                        android:id="@+id/button_bondandtransfer_prequlify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/red_button"
+                        android:padding="3dp"
+                        android:text="PREQUALIFY NOW"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.5"
+                    android:gravity="right" >
+
+                    <Button
+                        android:id="@+id/button_bondandtransfer_calculate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/green_button"
+                        android:padding="3dp"
+                        android:text="CALCULATE"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_affordability"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3.1"
+                android:background="#fff"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e6e6e6" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_affordability_whatamount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YOUR BOND REGISTRATION AND PROPERTY TRANSFER COST ARE..."
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/base_top_bar_topline" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@color/base_top_bar_Background"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Bond Registration Costs"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/base_top_bar_topline" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@drawable/row_background"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/bond_registration_cost"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#d7d7d7" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_bondtransfercalc_bond_registration_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="R 9000.00"
+                        android:textColor="@color/text"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@drawable/row_background"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/initiiation_fee"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#d7d7d7" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_bondtransfercalc_bond_initiation_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="R 0.00"
+                        android:textColor="@color/text"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@drawable/row_background"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/post_petties_fica"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#d7d7d7" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_bondtransfercalc_post_petties_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="R 9000.00"
+                        android:textColor="@color/text"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@drawable/row_background"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/total_bond_registration_cost"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#d7d7d7" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_bondtransfercalc_bond_total_bond_registration_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="R 9000.00"
+                        android:textColor="@color/text"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/base_top_bar_topline" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@color/base_top_bar_Background"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Property Transfer Costs"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/base_top_bar_topline" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@drawable/row_background"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/property_transfer_cost"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#d7d7d7" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_bondtransfercalc_bond_property_transfer_costs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="R 9000.00"
+                        android:textColor="@color/text"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@drawable/row_background"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Transfer duty"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#d7d7d7" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_bondtransfercalc_bond_transfer_duty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="R 9000.00"
+                        android:textColor="@color/text"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@drawable/row_background"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/post_petties_fica"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#d7d7d7" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_bondtransfercalc_bond_post_petties_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="R 9000.00"
+                        android:textColor="@color/text"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="@drawable/row_background"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/total_transfer_cost"
+                        android:textColor="@color/text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#d7d7d7" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_bondtransfercalc_bond_total_transfer_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="R 9000.00"
+                        android:textColor="@color/text"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.1"
+                    android:background="@color/infoRedBackground"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="6"
+                        android:src="@drawable/i_circle_icon" />
+
+                    <TextView
+                        android:id="@+id/affordcalc_informationnote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/info_bondtransfer"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.5"
+                    android:orientation="horizontal"
+                    android:padding="2dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_horizontal"
+                        android:text="Total cost"
+                        android:textColor="@color/title_heading"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textview_affordcalc_repaymentamount_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="= "
+                            android:textColor="@color/text"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textview_bondtransfercalc_bond_total_cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_horizontal"
+                            android:text="R 9000.00"
+                            android:textColor="#69bd27"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="#fff" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#69bd27"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.4" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/calculators_bottom_text"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textview_bond_transfer_prequalify"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="PREQUALIFY NOW  >"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/messageicon_whiteborder_small" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

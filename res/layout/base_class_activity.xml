@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_base"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/base_top_bar_topline" />
+
+    <FrameLayout
+        android:id="@+id/layout_baselayout_titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/base_top_bar_topline"
+        android:orientation="horizontal"
+        android:paddingTop="2dp" >
+
+        <LinearLayout
+            android:id="@+id/linear_layout_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_top_bar_topline"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linear_layout_backbutton"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:paddingRight="3dp" >
+
+                <Button
+                    android:id="@+id/button_baseclass_back"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:background="#5dae1d"
+                    android:drawableLeft="@drawable/back"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text=" BACK"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/base_top_bar_Background"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:paddingRight="30dip"
+                        android:src="@drawable/ooba_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/taglineTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="top|start"
+                        android:paddingRight="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Experts in home finance."
+                        android:textColor="#fff"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_iicon"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="3dp" >
+
+                <ImageView
+                    android:id="@+id/imageview_baseclass_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#5dae1d"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/i_icon"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/base_top_bar_bottomline" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f6f7f7" />
+
+    <FrameLayout
+        android:id="@+id/layout_basecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+    </FrameLayout>
+
+</LinearLayout>

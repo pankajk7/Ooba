@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f6f7f7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layout_calculator_layout_affordability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/affordable_cacl_icon_home_page" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textview_affordability_affordability_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="AFFORDABILITY CALCULATOR"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textview_affordability_affordability_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:text="Calculate the size home loan you are likely to qualify for."
+                            android:textColor="#616466" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="14.94"
+                android:background="@color/infoRedBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:src="@drawable/i_circle_icon" />
+
+                <TextView
+                    android:id="@+id/affordcalc_informationnote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="Note: This calculation is based on general lender affordability credit guide-lines of 30% instalment to gross income and on your disposable income."
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_whatamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WHAT LOAN AMOUNT DO I QUALIFY FOR?"
+                    android:textColor="@color/title_heading"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_grossmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gross monthly income *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_afford_calc_gross_montlyincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_netmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nett monthly income *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_afford_calc_nett_montlyincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_totalmonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total monthly expenses *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_afford_calc_total_montlyexpenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_affordability_nettsurplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nett surplus income"
+                    android:textColor="#616466" />
+
+                <TextView
+                    android:id="@+id/textview_afford_calc_nett_surplusincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_disabled"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Years to repay *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/textview_affordability_yeartorepay"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:drawableRight="@drawable/dropdownarrow"
+                    android:editable="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="none"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interest rate *"
+                    android:textColor="#616466" />
+
+                <EditText
+                    android:id="@+id/edittext_afford_calc_interestrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_new"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="%"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3.1"
+                android:gravity="right" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2.8"
+                    android:gravity="left" >
+
+                    <Button
+                        android:id="@+id/button_afford_calc_prequlify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/red_button"
+                        android:padding="3dp"
+                        android:text="PREQUALIFY NOW"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.6"
+                    android:gravity="right" >
+
+                    <Button
+                        android:id="@+id/button_afford_calc_calculate"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/green_button"
+                        android:padding="3dp"
+                        android:text="CALCULATE"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_affordability"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3.1"
+                android:background="#fff"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total monthly repayment amount"
+                        android:textColor="@color/title_heading"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textview_affordcalc_repaymentamount_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="="
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/textview_affordcalc_repaymentamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R 9000.00"
+                            android:textColor="@color/tab_text_color"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualified Amount 30% Gross Income"
+                        android:textColor="@color/title_heading"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="="
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/textview_affordcalc_grossincome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="R 1000305.00"
+                            android:textColor="@color/tab_text_color"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:background="#fff" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#69bd27"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.4" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/calculators_bottom_text"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/textview_affordability_calculator_prequalify"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="PREQUALIFY NOW  >"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/messageicon_whiteborder_small" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

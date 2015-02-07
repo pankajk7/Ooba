@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tabMedium">#2B2B2B</color>
+    <color name="tabDark">#000000</color>
+    <color name="tabTransparent">#10ffffff</color>
+    <color name="tabBackground">#231f20</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#FFFFFFFF</color>
+    <color name="base_top_bar_topline">#509634</color>
+    <color name="base_top_bar_bottomline">#e6e6e6</color>
+    <color name="base_top_bar_Background">#69bd27</color>
+    <color name="base_top_bar_Background1">#509634</color>
+    <color name="title_heading">#231f20</color>
+    <color name="text">#616466</color>
+    <color name="infoRedBackground">#c9003f</color>
+    <color name="buttonRed">#dc3057</color>
+    <color name="calculator_menu_divider">#f6f7f7</color>
+    <color name="validation">#ed2c2c</color>
+    <color name="faq_divider">#f6f7f7</color>
+    <color name="faq_expandable_background">#fafafa</color>
+    <color name="tab_text_color">#69bd27</color>
+    <color name="ammortisation_row_background">#f7f7f7</color>
+	<color name="edittext_text">#acacac</color>
+</resources>

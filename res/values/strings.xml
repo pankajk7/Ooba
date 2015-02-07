@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ooba</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_base_class">BaseClass</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_base_tab">BaseTabActivity</string>
+    <string name="title_activity_calculators">CalculatorsActivity</string>
+    <string name="title_activity_faqs">FAQsActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="calculators_bottom_text"><b>If you wish to prequalify</b> or have any other queries please contact <b>ooba</b> and let the experts in home finance help you secure your home loan</string>
+    <string name="bond_registration_cost">Bond registration costs <font size="9">(inc VAT)</font></string>
+    <string name="initiiation_fee">Initiation fee <font size="9">(inc VAT)*</font></string>
+    <string name="post_petties_fica">Post, petties, FICA and other fees <font size="9">(inc VAT)**</font></string>
+    <string name="total_bond_registration_cost">Total Bond Registration Costs <font size="9">(inc VAT)</font></string>
+    <string name="property_transfer_cost">Property Transfer costs <font size="9">(inc VAT)</font></string>
+    <string name="total_transfer_cost">Total Transfer costs <font size="9">(inc VAT)</font></string>
+     <string name="info_bondtransfer"><b>*This amount may vary, depending on the size of the loan, but will never exceed R5700 incl VAT</b> <b><br/><br>**Approximation</br></b></string>
+
+ 
+</resources>
